@@ -19,6 +19,7 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   config.robot.adapter = :slack
   config.adapters.slack.token = "xoxb-3202530256-nW8qcfoiGVncAb2k37Pl5QSp"
+
   config.redis[:url] = ENV["REDISTOGO_URL"]
   config.http.port = ENV["PORT"]
 
