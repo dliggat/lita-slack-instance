@@ -1,19 +1,23 @@
 ## README.md
 
-Set the `SLACK_TOKEN` as a Heroku environment variable. Slack takes care of the rest.
+Set the `SLACK_TOKEN` as a Heroku environment variable - available once you configure `lita` in Slack Services. Deploy, and everything else should just work.
 
-## Deployment
+### Initializing with Heroku
+
+Inside the [forked] repo, do: `heroku create`
+
+### Deployment
 
     git push heroku master
 
-## Scaling dynos
+### Scaling dynos
 
     heroku ps:scale web=1
 
-## Logs
+### Logs
 
     heroku logs --tail
 
-## Endpoint
+### Endpoint
 
     https://$SLACK_DOMAIN_ABBREVIATION-lita.herokuapp.com/lita/info
