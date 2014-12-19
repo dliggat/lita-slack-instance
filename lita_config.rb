@@ -1,6 +1,6 @@
 Lita.configure do |config|
   # The name your robot will use.
-  config.robot.name = "derp"
+  # config.robot.name = "derp"  # uses the slack name instead.
 
   # The locale code for the language to use.
   # config.robot.locale = :en
@@ -18,7 +18,7 @@ Lita.configure do |config|
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
   config.robot.adapter = :slack
-  config.adapters.slack.token = "xoxb-3202530256-nW8qcfoiGVncAb2k37Pl5QSp"
+  config.adapters.slack.token = ENV["SLACK_TOKEN"]
 
   config.redis[:url] = ENV["REDISTOGO_URL"]
   config.http.port = ENV["PORT"]
