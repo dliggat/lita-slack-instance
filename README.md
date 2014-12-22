@@ -4,7 +4,7 @@ Set the `SLACK_TOKEN` as a Heroku environment variable - available once you conf
 
 ### Initializing with Heroku
 
-Inside the [forked] repo, do: `heroku create`
+Inside the [forked] repo, do: `heroku create`.
 
 ### Deployment
 
