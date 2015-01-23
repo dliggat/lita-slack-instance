@@ -28,6 +28,8 @@ GEM
       thor (>= 0.18.1)
     lita-coin (0.0.3)
       lita (>= 2.3)
+    lita-google (1.0.0)
+      lita (>= 4.0)
     lita-google-images (2.0.0)
       lita (>= 4.0)
     lita-slack (1.0.1)
@@ -64,6 +66,7 @@ PLATFORMS
 DEPENDENCIES
   lita
   lita-coin
+  lita-google
   lita-google-images
   lita-slack
   lita-twss
